@@ -1,0 +1,136 @@
+.qualitas-contact{
+  .qualitas-container{
+    max-width: 1300px;
+  }
+  .qualitas-bread__crumbs{
+    margin-bottom: 100px;
+  }
+  .qualitas-text__section{
+    max-width: 940px;
+    margin: 0 auto 100px;
+  }
+  &__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__form{
+    max-width: 928px;
+    width: 100%;
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__info{
+    width: 100%;
+    max-width: 244px;
+  }
+  .qualitas-label{
+    width: calc(50% - 15px);
+    display: inline-block;
+    margin-bottom: 20px;
+    span{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      color: $primary;
+      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+    &__textarea{
+      width: 100%;
+      display: block;
+      margin-bottom: 35px;
+      span{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: $primary;
+        padding: 0 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .qualitas-input, .qualitas-textarea{
+    background: $gray;
+    border-radius: 10px;
+    border: 2px solid $primary;
+    padding: 8px 20px;
+  }
+  .qualitas-textarea{
+    height: 200px;
+  }
+  .modal-group{
+    margin-bottom: 20px;
+    .qualitas-label__checkbox{
+      a{
+        color: $primary;
+        display: inline;
+      }
+      &:before{
+        top: 0;
+        border-radius: 4px;
+        border: 2px solid $primary;
+      }
+      &:after{
+        top: 3px;
+      }
+    }
+  }
+  .qualitas__btn-primary{
+    background: $red;
+    padding: 10px 63px;
+    &:hover{
+      color: $primary;
+    }
+  }
+  .qualitas-upload{
+    width: 100%;
+    margin-bottom: 35px;
+    &__button{
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__inner{
+      height: 200px;
+      border-radius: 10px;
+      border: 2px dashed $primary;
+      padding: 40px;
+      text-align: center;
+      background: $gray;
+      &-btn{
+        color: $primary;
+        background: $gray-100;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+        padding: 10px 40px;
+        border: 2px solid $primary;
+        box-sizing: border-box;
+        border-radius: 10px;
+        &:hover{
+          background: $white;
+          color: $primary;
+        }
+        &:active{
+          background: rgba($white, .9);
+          color: $primary;
+        }
+      }
+    }
+    &__title{
+      font-size: 16px;
+      line-height: 34px;
+      font-weight: 500;
+      color: $primary;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &__info{
+    padding-top: 25px;
+  }
+}

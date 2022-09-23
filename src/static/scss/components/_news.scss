@@ -1,0 +1,135 @@
+.qualitas-news{
+  padding: 35px 0 150px;
+  .qualitas-bread__crumbs{
+    margin-bottom: 100px;
+  }
+  .qualitas-text__section{
+    max-width: 940px;
+    margin: 0 auto 60px;
+    font-weight: 600;
+  }
+  .qualitas-news__search{
+    max-width: 900px;
+    margin: 0 auto 100px;
+    form{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .qualitas__btn-primary{
+    color: $primary;
+    font-weight: 500;
+  }
+  .qualitas-input__search{
+    width: calc(100% - 210px);
+  }
+  .qualitas-container{
+    max-width: 1400px;
+  }
+  &__wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__inner{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__item{
+    width: calc(25% - 30px);
+    margin: 0 15px 150px;
+    &:nth-of-type(1){
+      width: calc(75% - 30px);
+      margin: 0 25% 150px 15px;
+    }
+    &-media{
+      margin-bottom: 30px;
+      img{
+        width: 100%;
+      }
+    }
+    &-title{
+      margin-bottom: 20px;
+      font-size: 34px;
+      line-height: 46px;
+      font-weight: 600;
+      color: $secondary;
+      a{
+        color: $secondary;
+        &:hover{
+          color: $secondary-100;
+        }
+      }
+    }
+    &-text{
+      margin-bottom: 40px;
+      font-size: 22px;
+      line-height: 42px;
+      font-weight: 600;
+      color: $primary;
+    }
+    &-link{}
+  }
+  &__archives{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    &-title{
+      font-size: 34px;
+      line-height: 46px;
+      font-weight: 600;
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+    li{}
+    a{
+      font-size: 22px;
+      line-height: 42px;
+      font-weight: 600;
+      color: $primary;
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+}
+.qualitas-post{
+  padding: 120px 0 120px;
+  .qualitas-title__section{
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .qualitas-bread__crumbs{
+    margin-bottom: 120px;
+  }
+  .qualitas-container{
+    max-width: 1400px;
+  }
+  .qualitas-post__media{
+    margin-bottom: 70px;
+    img{
+      width: 100%;
+    }
+  }
+  .qualitas-text__section{
+    text-align: left;
+  }
+}
+.qualitas-related__posts{
+  padding: 120px 0 120px;
+  .qualitas-title__section{
+    margin-bottom: 70px;
+  }
+  .qualitas-container{
+    max-width: 1400px;
+  }
+  .qualitas-news__item{
+    &:first-of-type{
+      width: calc(25% - 30px);
+      margin: 0 15px 150px;
+    }
+  }
+}

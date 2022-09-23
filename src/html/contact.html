@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	@@include('./includes/_head.html')
+
+</head>
+<body>
+<!--page-wrapper-->
+<div class="qualitas-page-wrapper">
+	@@include('./includes/_header.html')
+	<!--page-content-->
+	<div class="qualitas-page-content">
+		<section class="qualitas-top">
+			<div class="qualitas-top__bg"></div>
+			<div class="qualitas-container">
+				<div class="qualitas-top__title">Contact Us</div>
+			</div>
+		</section>
+		<section class="qualitas-contact">
+			<div class="qualitas-container">
+				<div class="qualitas-bread__crumbs">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							Contact Us
+						</li>
+					</ul>
+				</div>
+				<div class="qualitas-text__section">
+					nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+				</div>
+				<div class="qualitas-contact__wrap">
+					<div class="qualitas-contact__form">
+						<form action="#">
+							<label class="qualitas-label">
+								<span>First Name*</span>
+								<input type="text" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label">
+								<span>Last Name*</span>
+								<input type="text" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label">
+								<span>Email*</span>
+								<input type="email" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label">
+								<span>Phone Number*</span>
+								<input type="tel" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label">
+								<span>Practice Name*</span>
+								<input type="text" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label">
+								<span>Practice Website URL*</span>
+								<input type="text" class="qualitas-input" required>
+							</label>
+							<label class="qualitas-label__textarea">
+								<span>Message*</span>
+								<textarea name="Message" class="qualitas-textarea"></textarea>
+							</label>
+							<div class="qualitas-upload">
+								<div class="qualitas-upload__button">
+									<button type="button" class="qualitas__btn-attach">
+										Attach File
+										<svg class="icon">
+											<use xlink:href="#ic-attach"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="qualitas-upload__inner">
+									<div class="qualitas-upload__title">Drop files here or</div>
+									<button type="button" class="qualitas-upload__inner-btn">
+										Select Files
+									</button>
+								</div>
+							</div>
+							<div class="modal-group">
+								<input type="checkbox" id="contact-agree" name="subscription-agree" class="qualitas-input__checkbox">
+								<label for="contact-agree" class="qualitas-label__checkbox">Yes, I agree to the <a href="#">Terms and Conditions</a></label>
+							</div>
+							<div class="modal-group">
+								<input type="checkbox" id="contact-agree-2" name="subscription-agree" class="qualitas-input__checkbox">
+								<label for="contact-agree-2" class="qualitas-label__checkbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </label>
+							</div>
+							<button type="submit" class="qualitas__btn-primary">Send</button>
+						</form>
+					</div>
+					<div class="qualitas-contact__info">
+						<div class="qualitas-contact__info-address">
+							<svg class="icon">
+								<use xlink:href="#ic-pin"></use>
+							</svg>
+							<span>
+								57 London Road High Wycombe Buckinghamshire England HP11 1BS
+							</span>
+						</div>
+						<div class="qualitas-contact__info-phone">
+							<svg class="icon">
+								<use xlink:href="#ic-phone"></use>
+							</svg>
+							<a href="tel:01494292229" target="_blank">
+								01494 292229
+							</a>
+						</div>
+						<div class="qualitas-contact__info-social">
+							<ul>
+								<li>
+									<a href="#" target="_blank">
+										<img src="../static/images/svg/ic-linkedin.svg" alt="">
+										<span>LinkedIn</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<img src="../static/images/svg/ic-fb.svg" alt="">
+										<span>Facebook</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="qualitas-banner" style="background-image: url('../static/images/general/banner-bg.jpg')">
+			<div class="qualitas-container">
+				<h2 class="qualitas-title__section">Join Our Team</h2>
+				<div class="qualitas-text__section">
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+				<div class="qualitas-link__section">
+					<a href="#" class="qualitas__btn-secondary">Learn more</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--page-content-->
+	@@include('./includes/_footer.html')
+</div>
+<!--end-page-wrapper-->
+<div class="qualitas__hidden">
+    @@include('./includes/symbol/icons.html')
+</div>
+@@include('./includes/_scripts.html')
+</body>
+</html>
