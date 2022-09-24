@@ -30,6 +30,7 @@
     a{
       color: $white;
       font-weight: 500;
+      font-size: 16px;
       padding:50px 0;
       &:hover, .active{
         color: $secondary;
@@ -37,13 +38,44 @@
     }
   }
   &-sub{
+    position: relative;
     ul{
       position: absolute;
       z-index: -1;
       visibility: hidden;
+      left: auto;
+      top: 80%;
+      right: -108px;
+      margin: 0 auto;
+      width: 200px;
       opacity: 0;
+      flex-direction: column;
+      background: $secondary;
+      padding: 20px;
+      transition: all ease 300ms;
+      &:before{
+        position: absolute;
+        content: '';
+        width: 14px;
+        height: 14px;
+        transform: rotate(45deg);
+        top: -7px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: $secondary;
+      }
+      li{
+        margin:0 0 15px;
+      }
+      a{
+        color: $primary;
+        padding: 0;
+        &:hover, .active{
+          color: $white;
+        }
+      }
     }
-    position: relative;
     &:after{
       position: absolute;
       content: '';
@@ -57,12 +89,13 @@
       background-size: cover;
     }
     &:hover{
-      //ul{
-      //  position: absolute;
-      //  z-index: 2;
-      //  visibility: visible;
-      //  opacity: 1;
-      //}
+      ul{
+        top: 100%;
+        position: absolute;
+        z-index: 2;
+        visibility: visible;
+        opacity: 1;
+      }
       &:after{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Слой_1' x='0px' y='0px' viewBox='0 0 80.18 40.09' style='enable-background:new 0 0 80.18 40.09;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2358B999;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='0,0 40.09,40.09 80.18,0 '/%3E%3C/svg%3E");
       }
@@ -74,6 +107,7 @@
   }
   &-search{
     display: block;
+    cursor: pointer;
     margin: 0 30px;
     .icon{
       width: 28px;
@@ -108,9 +142,23 @@
       stroke: $white;
     }
   }
+  &.active{
+    .qualitas__header-nav {
+      padding-top: 80px;
+      opacity: 1;
+      visibility: visible;
+      background-image: linear-gradient( 90deg, rgb(0,128,201) 0%, rgb(88,185,153) 100%);
+    }
+    .qualitas-header__search-wrap{
+      opacity: 1;
+      visibility: visible;
+      background: transparent;
+    }
+  }
 }
-.header-btn{
-  margin: 0 0 0 auto;
+
+.qualitas__header-btn{
+  margin: 0 0 0 10px;
   display: none;
   width: 32px;
   height: 22px;
@@ -127,15 +175,15 @@
     content: '';
   }
   &:before{
-    width: 26px;
+    width: 25px;
     top: 0;
   }
   &:after{
-    width: 19px;
+    width: 25px;
     top: calc(100% - 2px);
   }
   span{
-    width: 32px;
+    width: 25px;
     top: 50%;
     margin-top: -1px;
   }
@@ -163,12 +211,20 @@
   visibility: hidden;
   position: absolute;
   padding: 20px 0;
+  width: 100%;
+  transition: all ease 300ms;
   background: $secondary;
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
   form{
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    position: relative;
   }
   .qualitas-label__search{
     color: $white;
@@ -176,5 +232,32 @@
   .qualitas-input__search{
     border-bottom: 2px solid $white;
     background: transparent;
+  }
+  .qualitas-label__search-reset{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: $white;
+    position: absolute;
+    right: -200px;
+    &:before, &:after{
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      margin: -1px auto 0;
+      top: 50%;
+      background: $secondary;
+      width: 75%;
+      height: 2px;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
   }
 }

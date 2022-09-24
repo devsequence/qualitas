@@ -2,6 +2,18 @@ $('.qualitas-reviews__slider').slick({
     dots: true,
     arrows: false
 });
+$('.qualitas-team__item-media').on('click', function (e) {
+    var $this = $(this);
+    $this.parent().toggleClass('active');
+});
+$('.qualitas__header-search ').on('click', function (e) {
+    var $this = $(this);
+    $('.qualitas-header__search-wrap').toggleClass('active');
+});
+$('.qualitas-team__item-close').on('click', function (e) {
+    var $this = $(this);
+    $this.parents('.qualitas-team__item').removeClass('active');
+});
 $('.qualitas-play__button').on('click', function (e) {
     var $this = $(this);
     $('.qualitas-play__button').removeClass('qualitas__hidden');
@@ -24,12 +36,13 @@ function popupOpen() {
     });
 }
 popupOpen();
+$('.qualitas__header-btn').on('click', function (e) {
+    var $this = $(this);
+    $this.toggleClass('active');
+    $('.qualitas__header').toggleClass('active');
+});
 // AOS.init({disable: 'mobile'});
-// $('.header-btn').on('click', function (e) {
-//     var $this = $(this);
-//     $this.toggleClass('active');
-//     $('.header').toggleClass('active');
-// });
+
 // $('.courses-item').each(function (e) {
 //     var $ths = $(this);
 //     var $thsText = $ths.find('.courses-item__text').text();

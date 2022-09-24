@@ -132,5 +132,44 @@
   }
   &__info{
     padding-top: 25px;
+    &-address{
+      display: flex;
+      margin-bottom: 40px;
+      span{
+        width: calc(100% - 46px);
+      }
+    }
+    &-phone{
+      margin-bottom: 70px;
+    }
+    .icon{
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      fill: $primary;
+      margin-right: 20px;
+    }
+    span,
+    a{
+      display: inline-block;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 600;
+      color: $primary-100;
+    }
+    &-social{
+      li{
+        margin-bottom: 20px;
+      }
+      a{
+        display: flex;
+        color: $primary;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+    }
   }
 }
